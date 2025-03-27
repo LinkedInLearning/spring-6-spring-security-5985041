@@ -1,33 +1,53 @@
 {
 	"name": "Java",
 	"image": "mcr.microsoft.com/devcontainers/java:1-21",
+	"hostRequirements": {
+		"cpus": 8,
+		"memory": "32gb"
+	},
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "21",
-			"installMaven": "false",
+			"installMaven": "true",
 			"mavenVersion": "3.8.6",
 			"installGradle": "false"
-		}
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	},
+	"mounts": [
+		"source=var-lib-docker,target=/var/lib/docker,type=volume"
+	],
 	// Configure tool-specific properties.
 	"customizations": {
-		"codespaces": {
-			"openFiles": [
-				"README.md"
-			]
-		},
 		"vscode": {
 			"settings": {
 				"java.jdt.ls.java.home": "/docker-java-home"
 			},
 			"extensions": [
 				"linkedinlearning.linkedinlearning-vscode-theme",
-				"vscjava.vscode-java-pack"
+				"vscjava.vscode-java-pack",
+				"GitHub.github-vscode-theme",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-java-debug",
+				"redhat.java",
+				"vscjava.vscode-spring-initializr",
+				"vscjava.vscode-spring-boot-dashboard",
+				"vmware.vscode-spring-boot",
+				"vmware.vscode-boot-dev-pack"
 			]
 		}
 	},
 	"remoteUser": "vscode",
-	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc" //Set Terminal Prompt to $
-	// "postCreateCommand": "sudo sh .devcontainer/startup.sh"
+	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+	"postStartCommand": "sudo sh .devcontainer/startup.sh",
+	"portsAttributes": {
+		"8080": {
+			"label": "Application",
+			"onAutoForward": "openBrowser"
+		},
+		"8443": {
+			"label": "AppSSL",
+			"onAutoForward": "openBrowser"
+		}
+	}
 }
-// DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
