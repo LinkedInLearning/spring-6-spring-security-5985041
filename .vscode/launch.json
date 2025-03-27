@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Admin-Web",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.frankmoley.lil.adminweb.AdminWebApplication",
+      "projectName": "admin-web",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
