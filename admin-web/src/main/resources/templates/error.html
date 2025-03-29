@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <div th:replace="header :: header"></div>
+  <div th:replace="~{header :: header}"></div>
   <div class="px-4 py-5 my-5 text-center">
     <h1 class="display-5 fw-bold">Oops</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">The page you are looking for doesn't exist.</p>
+      <p class="lead mb-4">An error has occurred, contact support.</p>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
