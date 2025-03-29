@@ -27,7 +27,7 @@ objectclass: inetOrgPerson
 cn: user
 sn: user
 uid: user
-userPassword: $2a$10$biqH/BsLZapkRlftOWwvz.o1Gye8R6eJFN4dp2YCaWvyTgMbFy8ui
+userPassword: $2a$10$a613GJuZgYwrp9CHK7G1tObbWwwMjJjeEtJu9mx/UGyU1MxHcjtki
 
 
 dn: uid=admin,ou=people,dc=landon,dc=org
@@ -38,7 +38,7 @@ objectclass: inetOrgPerson
 cn: admin
 sn: admin
 uid: admin
-userPassword: $2a$10$biqH/BsLZapkRlftOWwvz.o1Gye8R6eJFN4dp2YCaWvyTgMbFy8ui
+userPassword: $2a$10$a613GJuZgYwrp9CHK7G1tObbWwwMjJjeEtJu9mx/UGyU1MxHcjtki
 
 
 dn: cn=admin,ou=groups,dc=landon,dc=org
