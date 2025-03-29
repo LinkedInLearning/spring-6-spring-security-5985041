@@ -1,4 +1,4 @@
-package com.frankmoley.lil.adminweb.data.model;
+package com.frankmoley.lil.admin_web.data.model;
 
 import java.util.UUID;
 

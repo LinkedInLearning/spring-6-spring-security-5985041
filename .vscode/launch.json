@@ -2,10 +2,10 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Admin-Web",
+      "name": "Spring Boot-AdminWebApplication<admin-web>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "mainClass": "com.frankmoley.lil.adminweb.AdminWebApplication",
+      "mainClass": "com.frankmoley.lil.admin_web.AdminWebApplication",
       "projectName": "admin-web",
       "args": "",
       "envFile": "${workspaceFolder}/.env"

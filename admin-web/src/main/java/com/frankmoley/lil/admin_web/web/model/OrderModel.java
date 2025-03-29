@@ -1,4 +1,4 @@
-package com.frankmoley.lil.adminweb.web.model;
+package com.frankmoley.lil.admin_web.web.model;
 
 import java.util.UUID;
 import lombok.Data;

@@ -1,8 +1,8 @@
-package com.frankmoley.lil.adminweb.data.repository;
+package com.frankmoley.lil.admin_web.data.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.frankmoley.lil.adminweb.data.model.Order;
+import com.frankmoley.lil.admin_web.data.model.Order;
 
 import java.util.UUID;
 

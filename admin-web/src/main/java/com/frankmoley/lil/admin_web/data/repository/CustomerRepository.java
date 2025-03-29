@@ -1,9 +1,9 @@
-package com.frankmoley.lil.adminweb.data.repository;
+package com.frankmoley.lil.admin_web.data.repository;
 
 import java.util.UUID;
 import org.springframework.data.repository.CrudRepository;
 
-import com.frankmoley.lil.adminweb.data.model.Customer;
+import com.frankmoley.lil.admin_web.data.model.Customer;
 
 public interface CustomerRepository extends CrudRepository<Customer, UUID> {
 }
