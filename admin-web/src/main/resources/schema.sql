@@ -11,4 +11,4 @@ CREATE TABLE orders(
     customer_id UUID not null,
     order_info varchar (2048) not null,
     foreign key (customer_id) references customers(customer_id)
-)
+);
