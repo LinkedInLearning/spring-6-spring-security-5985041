@@ -61,21 +61,20 @@ public class CustomerController {
     }
     model.addAttribute("customer", customer.get());
     List<Order> orders = new ArrayList<>();
-    if (principal instanceof UsernamePasswordAuthenticationToken) {
+    if (principal instanceof UsernamePasswordAuthenticationToken){
       AtomicBoolean auth = new AtomicBoolean(false);
-      Collection<GrantedAuthority> authorities = ((UsernamePasswordAuthenticationToken) principal).getAuthorities();
+      Collection<GrantedAuthority> authorities = 
+        ((UsernamePasswordAuthenticationToken) principal).getAuthorities();
       authorities.forEach(authority -> {
-        if (authority.getAuthority().equals("ROME_ADMIN")){
+        if(authority.getAuthority().equals("ROLE_ADMIN")){
           auth.set(true);
         }
-      }
-      );
-      if (auth.get()){
+      });
+      if(auth.get()){
         Iterable<Order> ordersIterable = this.orderRepository.findAllByCustomerId(customer.get().getId());
         ordersIterable.forEach(orders::add);
       }
     }
-
     model.addAttribute("orders", orders);
     model.addAttribute("module", "customers");
     return "detailed_customer";
