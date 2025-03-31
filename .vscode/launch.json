@@ -19,6 +19,16 @@
       "projectName": "bones",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AdminClientApplication<admin-client>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.frankmoley.lil.admin_client.AdminClientApplication",
+      "projectName": "admin-client",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
