@@ -26,7 +26,12 @@ public class WebSecurityConfig {
         .requestMatchers("/orders").hasRole("ADMIN")
         .anyRequest().authenticated()
       )
-      .httpBasic(Customizer.withDefaults());
+      .formLogin((form)-> form
+        .loginPage("/login")
+        .permitAll()
+      )
+      .logout((logout)-> logout.permitAll()
+      );
       return http.build();
   }
 
