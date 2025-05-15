@@ -5,6 +5,8 @@ This is the repository for the LinkedIn Learning course `Spring 6: Spring Securi
 
 ## Course Description
 
+This comprehensive Spring Security course provides an in-depth exploration of security implementation in Java applications, covering critical topics from core authentication concepts to advanced security techniques. Learn to implement various authentication methods including in-memory, JDBC, and LDAP authentication, master password hashing with bcrypt, develop form-based and OAuth2 authentication strategies, and secure WebFlux-based systems. The course progresses through practical implementations of controller method authorizations, login page configurations, and advanced security frameworks, equipping you with the skills to protect web applications using Spring Security's robust toolset across different architectural approaches.
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -24,24 +26,18 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
-
 ## Instructor
 
-Instructor name
+Frank P Moley III
 
-Instructor description
+Principal Software Architect at Vertex, Inc.
 
                             
 
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/).
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/frank-p-moley-iii?u=104).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
+[lil-course-url]: https://www.linkedin.com/learning/spring-6-spring-security
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQGM42dYNIUQUw/learning-public-crop_675_1200/B4EZaNvIdDHoAY-/0/1746134665323?e=2147483647&v=beta&t=_d-79CVF9PcZt994YTHF1qhQl94G3OXpRDEJLCb1qG4
