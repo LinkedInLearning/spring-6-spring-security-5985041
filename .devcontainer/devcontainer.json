@@ -11,17 +11,14 @@
 			"installMaven": "true",
 			"mavenVersion": "3.8.6",
 			"installGradle": "false"
-		},
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+		}
 	},
-	"mounts": [
-		"source=var-lib-docker,target=/var/lib/docker,type=volume"
-	],
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"java.jdt.ls.java.home": "/docker-java-home"
+				"java.jdt.ls.java.home": "/docker-java-home",
+				"java.server.launchMode": "Standard"
 			},
 			"extensions": [
 				"linkedinlearning.linkedinlearning-vscode-theme",
