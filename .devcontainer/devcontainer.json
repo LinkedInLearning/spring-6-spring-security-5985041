@@ -17,7 +17,8 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"java.jdt.ls.java.home": "/docker-java-home"
+				"java.jdt.ls.java.home": "/docker-java-home",
+				"java.server.launchMode": "Standard"
 			},
 			"extensions": [
 				"linkedinlearning.linkedinlearning-vscode-theme",
